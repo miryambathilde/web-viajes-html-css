@@ -1,0 +1,361 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh !important;
+    font-family: 'Noto Sans', sans-serif;
+    color: #222222;
+}
+
+/* UTILITY CLASSES */
+
+.btn-rojo {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #fb2056;;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    display: inline-block;
+
+    /* FLEXBOX */
+    align-self: center;
+}
+
+.btn-rojo:hover {
+    background-color: #b40531d3;
+}
+
+.text {
+    text-align: center;
+}
+
+/* END UTILITIES CLASES */
+
+/* SECTION ONE */
+
+#section-one {
+    background: linear-gradient(rgba(68, 13, 13, 0.30), rgba(38,2,2,0.346)), url("./img/backgrounds/bg-beach1.jpg") no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#logo {
+    margin: 0;
+    font-weight: 700;
+    font-stretch: wider;
+}
+
+#logo span {
+    color: #fb2056;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 600;
+}
+
+nav > a:hover {
+    color: #e7164a;
+    font-weight: 600;
+}
+
+#section-one-content {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#section-one-content > p {
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#section-one-content > hr {
+    width: 4.5rem;
+    border-color: #fb2056;
+}
+
+#section-one-content > h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+/* END SECCION ONE */
+
+
+/* SECTION 2 */
+
+    #segunda-seccion{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    #titulo {
+        margin-bottom: 2rem;
+    }
+
+    #titulo > h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    #titulo > hr {
+        width: 4.5rem;
+        border-color: #fb2056;
+    }
+
+    #container-segunda-seccion{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img-tercera {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .img-tercera > h6 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .img-tercer > p {
+        margin-bottom: 2rem;
+    }
+
+    .img-tercera > img {
+        max-width: 100%;
+    }
+
+
+/* END SECTION 2 */
+
+/* SECTION 3 */
+
+    #tercera-seccion{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.305)), url("./img/backgrounds/bg-holiday.jpg") no-repeat center/cover;
+        background-attachment: fixed;
+        height: 100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contenedor {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mitad {
+        width: 50%;
+    }
+
+    #tercera-seccion-der > h3 {
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    #tercera-seccion-der > hr {
+        width: 4.5rem;
+        border-color: #fb2056;
+        margin-left: 0;
+        margin-bottom: 3rem;
+    }
+
+    #tercera-seccion-der > p {
+        margin-bottom: 4rem;
+    }
+
+/* END SECCION 3 */
+
+/* SECTION 4 */
+
+#cuarta-seccion {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#cuarta-seccion-izquierda {
+    flex: 1;
+}
+
+#cuarta-seccion-izquierda > h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#cuarta-seccion-izquierda > p {
+    margin-bottom: 4rem;
+}
+
+#cuarta-seccion-derecha {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+#cuarta-seccion-derecha > img {
+    max-width: 100%;
+}
+
+#cuarta-seccion-izquierda > hr {
+    width: 4.5rem;
+    border-color: #fb2056;
+    margin-left: 0;
+    margin-bottom: 3rem;
+}
+
+/* END SECTION 4 */
+
+/* FOOTER */
+
+footer {
+    background-color: #302f2f;
+    color: white;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer span {
+    color: #fb2056;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+/* MEDIA QUERIES */
+
+@media(max-width:522px){
+    #section-one{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    #nav-bar > p,
+    nav {
+        text-align: center;
+    }
+
+    #section-one-content{
+        margin-top: 2.5rem;
+    }
+
+    #section-one-content > h1{
+        font-size: 2.5rem;
+    }
+
+
+    #segunda-seccion {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 90%;
+    } 
+
+    #container-segunda-seccion {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .img-tercera {
+        margin-bottom: 2rem;
+    }
+
+    .img-tercera > img {
+        max-width: 100%;
+    }
+
+
+    #tercera-seccion-izq {
+        display: none;
+    }
+
+    #tercera-seccion-der{
+        width: 100%;
+    }
+
+    #cuarta-seccion {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #cuarta-seccion-derecha{
+        flex: 1;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        gap: 15px 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
